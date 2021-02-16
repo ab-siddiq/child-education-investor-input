@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Education Investor Input</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="calculator">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-child">
+                    <div class="text-center pb-5">
+                        <h2 class="text-capitalize">Child Education Investor Input</h2>
+                        <div class="">
+                            <hr class="line m-auto">
+                        </div>
+                    </div>
+                    <!-- tax input -->
+                    <div class="tax-input">
+                        <form action="" class="w-5" id="investor-form">
+
+                            <div class="form-group mb-3 ">
+                                <label for="">Your Good Name, Please:</label>
+                                <input type="text" class="form-control" id="investor-name-input" name=""
+                                    placeholder="Ex: Siddiq" value="Siddiq">
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <label for="">Your Age Now:</label>
+                                <input type="number" class="form-control" id="investor-current-age-input" name=""
+                                    placeholder="Your Age Now" value="38">
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <label for="">Your Annual Income:</label>
+                                <input type="number" class="form-control" id="investor-annual-income-input" name=""
+                                    placeholder="Your annual Income" value="1500000">
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <label for="">Your Child's Age Now:</label>
+                                <input type="number" class="form-control" id="investor-child-current-age-input" name=""
+                                    placeholder="Child's age now" value="5">
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <label for="">At What Age of Your Child, You Need the Amount:</label>
+                                <input type="number" class="form-control" id="investor-at-age-input" name=""
+                                    placeholder="At age you need the amount" value="20">
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <label for="">How Much The Education Costs Now:</label>
+                                <input type="number" class="form-control" id="investor-current-educational-cost-input" name=""
+                                    placeholder="Current education cost" value="15000000">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="">You Want to Invest:</label>
+                                <input type="number" class="form-control" id="investor-possible-invest-input" name=""
+                                    placeholder="" value="100000">
+                            </div>
+    
+                            <div class="form-group mb-3">
+                                <label for="">Your Risk Aptitude:</label>
+                                <select class="form-control" id="investor-risk-aptitude-input">
+                                    <!-- <option selected>Open this select menu</option> -->
+                                    <option selected>Select your risk aptitude</option>
+                                    <option value="1">Low</option>
+                                    <option value="2">Moderate</option>
+                                    <option value="3">High</option>
+                                </select>
+
+                            </div>
+                            <div class="  ">
+                                <div class="d-flex justify-content-end">
+                                    <button onclick="" type="reset" id="investor-reset"
+                                        class="btn calculate-button mx-2">reset</button>
+                                    <button onclick="investorInput()" type="submit" id="investor-calculate"
+                                        class="btn calculate-button mx-2">calculate</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- tax output -->
+                    <div id="output" class="tax-output">
+                        <p class="output">
+                            <!-- Dear Mr/ Mrs. <span id="investor-name">Siddiq</span>
+                             When you will be of <span  id="investor-age">0</span>
+                              ,you are to have <span id="possible-amount">0</span>
+                               Taka to
+                            Meet Your Goal The Inflation is considered at <strong>5.71%</strong> , And The return is
+                            Estimated to be 
+                            <span id="estimated-return">0</span> Your monthly SIP is
+                             <span id="pmt">0</span> + initial investment of 
+                             <span id="ekush-unit-fund">0</span> Taka will
+                            help you to achive the goal of 
+                            <span id="possible-amount-again">0</span> 
+                            at the age of 
+                            <span
+                                id="target-age">0</span> -->
+                        </p>
+                        <!-- <p class="">
+                            Note: 1) As per Bangladesh Bank data, last 5 years averge inflation rate is
+                            <strong>5.71%</strong>
+                        </p> -->
+
+                    </div>
+                    <a href="" class="btn calculate-button">download</a>
+                    <a href="" class="btn calculate-button">register now</a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
