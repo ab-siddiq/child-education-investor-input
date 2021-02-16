@@ -65,11 +65,11 @@ const calculationInvestorInput = (inputValues) => {
 const showOutput = (outputValues) => {
     document.getElementById('output').innerHTML = `
         <p class="text-justify"> 
-        Dear Mr/ Mrs. ${outputValues.name} When your Child will be at the Age of  ${outputValues.ageGoal} You are to have ${outputValues.fv1} Taka For the Education Plan
-        The Inflation is considered at ${outputValues.inflationPercent}% , And The return is Estimated to be ${outputValues.estimatedPercent}% Your monthly SIP investment of ${outputValues.pmt} Taka
-        with initial investment of  ${outputValues.possibleInvest} Taka help you to achieve your children's education at the age of ${outputValues.ageGoal} <br>
+        Dear Mr/ Mrs. <strong> ${outputValues.name} </strong>When your Child will be at the Age of <strong> ${outputValues.ageGoal}</strong> You are to have <strong>${outputValues.fv1} Taka </strong>For the Education Plan
+        The Inflation is considered at <strong>${outputValues.inflationPercent}%</strong> , And The return is Estimated to be <strong>${outputValues.estimatedPercent}%</strong> Your monthly SIP investment of <strong>${outputValues.pmt}</strong> Taka
+        with initial investment of  <strong>${outputValues.possibleInvest} Taka</strong> help you to achieve your children's education at the age of <strong>${outputValues.ageGoal}</strong> <br>
         
-        ${outputValues.fv2}
+        <strong>${outputValues.fv2}
         </p>
     
     
